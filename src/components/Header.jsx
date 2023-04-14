@@ -22,11 +22,11 @@ return(
             <ul className={burger ? 'h-screen py-8 flex flex-col items-center justify-between fixed z-20 bg-gray-900/90 w-full' : "fixed flex justify-between items-center sm:absolute z-20 py-8 px-3 bg-gray-900/50 w-full"}>
                   <li className={burger ? 'block' : "hidden sm:block"}>
                   <ul className={burger ? 'flex items-center space-x-4' : "hidden sm:flex items-center space-x-4"}>
-                  <li className={burger ? 'link-toggle' : "link-main"} onClick={() => setBurger(false)}><Link to="/movie-app">Movies</Link></li>
+                  <li className={burger ? 'link-toggle' : "link-main"} onClick={() => setBurger(false)}><Link to="/movies-app">Movies</Link></li>
                   <li className={burger ? 'link-toggle' : "link-main"} onClick={() => setBurger(false)}><Link to="/favorites">Favorites</Link></li>
                   </ul>
                </li>
-               <li onClick={() => setBurger(false)} className=""><Link to="/movie-app"><img src={logoImg} alt="img" /></Link></li>
+               <li onClick={() => setBurger(false)} className=""><Link to="/movies-app"><img src={logoImg} alt="img" /></Link></li>
                <li onClick={() => handleClickInfo()} className={info ? 'p-2 bg-black/70 rounded' : ''}>
                   <ul className={burger ? 'flex items-center space-x-4' : "hidden sm:flex items-center space-x-4"}>
                   <li className="cursor-pointer"><img className="max-w-[18px]" src={searchImg} alt="img" /></li>

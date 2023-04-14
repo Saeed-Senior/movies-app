@@ -13,7 +13,7 @@ return(
       <div className="">
 
           <Routes>
-            <Route path="/movie-app" element={<Home/>}/>
+            <Route path="/movies-app" element={<Home/>}/>
             <Route path="/favorites" element={<Favorites/>}/>
             <Route path="/moviecard" element={<MovieCard />}/>
             <Route path="*" element={<NotFound/>}/>
